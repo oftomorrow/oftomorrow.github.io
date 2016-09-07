@@ -976,7 +976,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;I was looking for health databases for my first reseach. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. These data are available to the general public, so I choosed it. I downloaded the data file and the codebook for transcription. Reading the codebook (at least introduction) is needed for better data understanding.&lt;/p&gt;
+&lt;p&gt;I was looking for health databases for my first reseach. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. Since these data are available for the general public, I chose this database. I downloaded the data file and the codebook for transcription. Reading the codebook (at least the introduction) is important for better data understanding.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -985,7 +985,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;For each variable in the 2012 data file, the codebook provides the variable name, a description of the variable, value codes and their meanings, and an unweighted univariate frequency distribution. Most of the variables originated directly as interview items. The variable names in this codebook are the variable names used in the dataset.&lt;/p&gt;
+&lt;p&gt;For each variable in the 2012 data file, the codebook provides a variable name, a description of the variable, value codes and their meanings, and an unweighted univariate frequency distribution. Most of the variables originated directly as interview items. The variable names in this codebook are the same as variable names used in the dataset.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -994,7 +994,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So, now let's look at the data:&lt;/p&gt;
+&lt;p&gt;So, now let's take a look at the data:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1180,7 +1180,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We should clean data for better usability and hepling make analysis more quickly (I added some unfamiliar variables for future):&lt;/p&gt;
+&lt;p&gt;We should clean the data for a better usability and to increase the speed of analysis (I added some unfamiliar variables for future):&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1204,7 +1204,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;I decided to start with LSD interview item. These variables I found in the codebook: LSD (ever used LSD ("acid")), LSDAGE (age when first used LSD), LSDAGLST (how old were you the last time used LSD).&lt;/p&gt;
+&lt;p&gt;I decided to start with LSD interview item. I found these variables in the codebook: LSD (ever used LSD ("acid")), LSDAGE (age when first used LSD), LSDAGLST (how old were you the last time used LSD).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1213,7 +1213,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Now, I want to know how much people ever try LSD:&lt;/p&gt;
+&lt;p&gt;Now I want to know how many people ever tried LSD:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1294,7 +1294,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We need to transcript that and look what we get. 1 means "yes", 2 - "no", 3 means "yes", but logicaly assigned, 91 means "never used hallucinogens", 94 - "don't know" and 97 - "refused".&lt;/p&gt;
+&lt;p&gt;We need to transcript this and analyse what we get. 1 means "yes", 2 - "no", 3 means "yes", but logicaly assigned, 91 means "never used hallucinogens", 94 - "don't know" and 97 - "refused".&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1380,7 +1380,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;With that data we construct a pie chart. For well-looking it would be better to put down items with percentage lower than 1.&lt;/p&gt;
+&lt;p&gt;With these data we constructed a pie chart. For well-looking it would be better to put down items with percentage lower than 1.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1834,7 +1834,7 @@ H+Jxs+Gc3rpdAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So, it's only 6.6% ever try LSD. Does it means hippies are still alive? Still, we have another interesting variable: age when first used lsd. For this data type it will be more graphically to construct histogram. This time I defined a function for histogram, because we will need it in future.&lt;/p&gt;
+&lt;p&gt;So, it's only 6.6% ever tried LSD. Does it means hippies are still alive? Still, we have another interesting variable: age when first used lsd. For this data type it is nice to construct histogram for better visualiztion. This time I defined a function for histogram, because we will need it in future.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2171,7 +2171,7 @@ AAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;What a beatiful colorful childhood it was! I guess, we shouldn't care about some obviously false answers like "I was 1 (2/3/..) when i first time used LSD". For now, let's look at histogram with LAST time used LSD.&lt;/p&gt;
+&lt;p&gt;What a beatiful colorful childhood it was! I guess, we shouldn't care about some obviously false answers like "I was 1 (2/3/..) when i first time used LSD". For now, let's take a look at histogram with LAST time used LSD.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2512,7 +2512,7 @@ IYSQOqNOhBBCSJ39P/RrZtMmMzT/AAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Interesting, some (and many) people said they last time used LSD in 18. Should we trust them? I don't think so. I think it's time for take a rest of hallucinogens and construct same histograms for smoking people.&lt;/p&gt;
+&lt;p&gt;Interesting, some (and many) people said they used LSD last time at the age of 18. Should we trust them? I don't think so. I think it's time to take a rest from hallucinogens and construct same histograms for smoking people.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3769,7 +3769,7 @@ MAzDMFbChRTDMAzDMIyVcCHFMAzDMAxjJVxIMQzDMAzDWMn/AO/AAsudir4WAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So many teenagers tried smoking so early, but only in 18 is the "best" age to start smoking everyday. Dear parents, I think you should take it into consideration.&lt;/p&gt;
+&lt;p&gt;So many teenagers tried smoking so early, but only 18 is the "best" age to start smoking everyday. Dear parents, I think you should take it into consideration.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3778,7 +3778,7 @@ MAzDMFbChRTDMAzDMIyVcCHFMAzDMAxjJVxIMQzDMAzDWMn/AO/AAsudir4WAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Now, let's look how using LSD (ever once) correlate with using other drugs. I constructed bar chart with yes-no answers to illustrate this correlation.&lt;/p&gt;
+&lt;p&gt;Now, let's take a look how LSD usage (ever once) correlate with the usage of other drugs. I constructed bar chart with yes-no answers to illustrate this correlation.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5447,7 +5447,7 @@ gg==
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;What does it means? Maybe people who ever once tried any drugs are more openly to experimentation. But it's obvious marijuana is the most popular drug and heroin is the most unpopular (thank God).&lt;/p&gt;
+&lt;p&gt;What does it mean? Maybe people who ever once tried any drugs are more open for experiments. But it's obvious that marijuana is the most popular drug and heroin is the most unpopular (thank God).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5456,7 +5456,7 @@ gg==
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;At this interesting point, I want to finish my first data analysis. Here are a lot of data in this database, so analysis might become endless. But for now I want to say goodbye and wish you good health.&lt;/p&gt;
+&lt;p&gt;At this interesting point, I want to finish my first data analysis. There are a lot of data in this database, so analysis might become endless. But for now I want to say goodbye and wish you a good health.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
