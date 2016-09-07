@@ -1,5 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="http://oftomorrow.github.io/" rel="alternate"></link><link href="http://oftomorrow.github.io/feeds/all.atom.xml" rel="self"></link><id>http://oftomorrow.github.io/</id><updated>2016-09-06T17:20:00+02:00</updated><entry><title>Small drug use data analysis</title><link href="http://oftomorrow.github.io/drug-use-analysis.html" rel="alternate"></link><published>2016-09-06T17:20:00+02:00</published><author><name>Dinara S.</name></author><id>tag:oftomorrow.github.io,2016-09-06:drug-use-analysis.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://oftomorrow.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://oftomorrow.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://oftomorrow.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="http://oftomorrow.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom">
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="Dinara S." />
+<meta name="description" content="For my first reseach I was looking for health data. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. These data are available to the general public, so I choosed it." />
+<meta name="keywords" content="matplotlib, data, analisys, python">
+<meta property="og:site_name" content="A Pelican Blog"/>
+<meta property="og:title" content="Small drug use data analysis"/>
+<meta property="og:description" content="For my first reseach I was looking for health data. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. These data are available to the general public, so I choosed it."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://oftomorrow.github.io/drug-use-analysis.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2016-09-06 17:20:00+02:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://oftomorrow.github.io/author/dinara-s.html">
+<meta property="article:section" content="data analysis"/>
+<meta property="article:tag" content="matplotlib"/>
+<meta property="article:tag" content="data"/>
+<meta property="article:tag" content="analisys"/>
+<meta property="article:tag" content="python"/>
+<meta property="og:image" content="https://scontent.xx.fbcdn.net/v/t1.0-9/13770360_1345301725499460_6960922626978449112_n.jpg?oh=dfa2d248e5e7674718e29adc75846f22&oe=587CBEC6">
+  <title>A Pelican Blog &ndash; Small drug use data analysis</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://oftomorrow.github.io">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/13770360_1345301725499460_6960922626978449112_n.jpg?oh=dfa2d248e5e7674718e29adc75846f22&oe=587CBEC6" alt="About science, math and programming" title="About science, math and programming">
+      </a>
+      <h1><a href="http://oftomorrow.github.io">About science, math and programming</a></h1>
+      <ul class="social">
+        <li><a class="sc-facebook" href="https://www.facebook.com/oftomorrow" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="sc-github" href="http://github.com/oftomorrow" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/oftomorrow" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <nav>
+      <a href="http://oftomorrow.github.io">Home</a>
+      <a href="http://oftomorrow.github.io/feeds/all.atom.xml">Atom</a>
+    </nav>
+
+<article>
+  <header>
+    <h1 id="drug-use-analysis">Small drug use data analysis</h1>
+    <p>Posted on Вт. 06 Сентябрь 2016 in <a href="http://oftomorrow.github.io/category/data-analysis.html">data analysis</a></p>
+  </header>
+  <div>
+    <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -230,7 +297,7 @@ div.unrecognized_cell .inner_cell a:hover {
   text-decoration: none;
 }
 @media (max-width: 540px) {
-  div.unrecognized_cell &gt; div.prompt {
+  div.unrecognized_cell > div.prompt {
     display: none;
   }
 }
@@ -283,19 +350,19 @@ div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
 }
-div.input_area &gt; div.highlight {
+div.input_area > div.highlight {
   margin: 0.4em;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-div.input_area &gt; div.highlight &gt; pre {
+div.input_area > div.highlight > pre {
   margin: 0px;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-/* The following gets added to the &lt;head&gt; if it is detected that the user has a
+/* The following gets added to the <head> if it is detected that the user has a
  * monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
@@ -341,7 +408,7 @@ div.input_area &gt; div.highlight &gt; pre {
 }
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 Adapted from GitHub theme
 
 */
@@ -803,7 +870,7 @@ div.text_cell {
   align-items: stretch;
 }
 @media (max-width: 540px) {
-  div.text_cell &gt; div.prompt {
+  div.text_cell > div.prompt {
     display: none;
   }
 }
@@ -868,8 +935,8 @@ h6:hover .anchor-link {
   font-size: 100%;
   font-style: italic;
 }
-&lt;/style&gt;
-&lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -933,8 +1000,8 @@ h6:hover .anchor-link {
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
-&lt;style type="text/css"&gt;
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -970,479 +1037,479 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-&lt;/style&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;For my first reseach I was looking for health data. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. These data are available to the general public, so I choosed it.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;I downloaded the data file and the codebook to transcript data. I started with the codebook.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;For each variable in the 2012 data file, the codebook provides the variable name, a description of the variable, value codes and their meanings, and an unweighted univariate frequency distribution. Most of the variables originated directly as interview items. The variable names in this codebook are the variable names used in the dataset.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So, now let's look at the data:&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+</style>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For my first reseach I was looking for health data. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. These data are available to the general public, so I choosed it.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I downloaded the data file and the codebook to transcript data. I started with the codebook.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For each variable in the 2012 data file, the codebook provides the variable name, a description of the variable, value codes and their meanings, and an unweighted univariate frequency distribution. Most of the variables originated directly as interview items. The variable names in this codebook are the variable names used in the dataset.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So, now let's look at the data:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [5]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-&lt;span class="n"&gt;file_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"34933-0001-Data.tsv"&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"data/DrugUse/ICPSR_34933/DS0001/&lt;/span&gt;&lt;span class="si"&gt;{0}&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;file_name&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;sep&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\t&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div style="max-width:1500px;overflow:auto;"&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;CASEID&lt;/th&gt;
-&lt;th&gt;QUESTID2&lt;/th&gt;
-&lt;th&gt;CIGEVER&lt;/th&gt;
-&lt;th&gt;CIGOFRSM&lt;/th&gt;
-&lt;th&gt;CIGWILYR&lt;/th&gt;
-&lt;th&gt;CIGTRY&lt;/th&gt;
-&lt;th&gt;CIGYFU&lt;/th&gt;
-&lt;th&gt;CIGMFU&lt;/th&gt;
-&lt;th&gt;CIGREC&lt;/th&gt;
-&lt;th&gt;CIG30USE&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;IIEMPSTY&lt;/th&gt;
-&lt;th&gt;II2EMSTY&lt;/th&gt;
-&lt;th&gt;EMPSTAT4&lt;/th&gt;
-&lt;th&gt;IIEMPST4&lt;/th&gt;
-&lt;th&gt;II2EMST4&lt;/th&gt;
-&lt;th&gt;PDEN00&lt;/th&gt;
-&lt;th&gt;COUTYP2&lt;/th&gt;
-&lt;th&gt;ANALWT_C&lt;/th&gt;
-&lt;th&gt;VESTR&lt;/th&gt;
-&lt;th&gt;VEREP&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;50886467&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;991&lt;/td&gt;
-&lt;td&gt;9991&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;1275.597449&lt;/td&gt;
-&lt;td&gt;30054&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;13766883&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;991&lt;/td&gt;
-&lt;td&gt;9991&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;5191.071173&lt;/td&gt;
-&lt;td&gt;30031&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;17772877&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;991&lt;/td&gt;
-&lt;td&gt;9991&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;419.742011&lt;/td&gt;
-&lt;td&gt;30056&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;45622817&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;13&lt;/td&gt;
-&lt;td&gt;9999&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;93&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;1449.303889&lt;/td&gt;
-&lt;td&gt;30054&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;17239390&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;11&lt;/td&gt;
-&lt;td&gt;9999&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;93&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;15344.293577&lt;/td&gt;
-&lt;td&gt;30012&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;5 rows × 3120 columns&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;I decided to start with LSD interview item. These variables I found in the codebook:&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;LSD -- EVER USED LSD ("ACID")&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;LSDAGE -- AGE WHEN FIRST USED LSD&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;LSDAGLST -- HOW OLD WERE YOU THE LAST TIME USED LSD&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We should clean data for better usability and hepling make analysis more quickly (I added some unfamiliar variables for future):&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;needed_fields&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"QUESTID2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"LSD"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"LSDAGE"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"LSDAGLST"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                 &lt;span class="s2"&gt;"CIGTRY"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"CIG30AV"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"CIGAGE"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"ALCYRTOT"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                 &lt;span class="s2"&gt;"COCEVER"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"HEREVER"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"CRKEVER"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"METHDES"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                 &lt;span class="s2"&gt;"DIETPILS"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"MJEVER"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="n"&gt;needed_fields&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Now, I want to know how much people ever try LSD:&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;lsd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'LSD'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;agg&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s2"&gt;"QUESTID2"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'count'&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
-&lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'COUNT'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;lsd_prc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;()))&lt;/span&gt;
-&lt;span class="n"&gt;lsd_prc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'PERCENT'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;lsd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;lsd_prc&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div style="max-width:1500px;overflow:auto;"&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;COUNT&lt;/th&gt;
-&lt;th&gt;PERCENT&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;LSD&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;3647&lt;/td&gt;
-&lt;td&gt;6.598755&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;3759&lt;/td&gt;
-&lt;td&gt;6.801404&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;0.003619&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;91&lt;/th&gt;
-&lt;td&gt;47816&lt;/td&gt;
-&lt;td&gt;86.516610&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;94&lt;/th&gt;
-&lt;td&gt;39&lt;/td&gt;
-&lt;td&gt;0.070565&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;97&lt;/th&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;0.009047&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Transcript that and look what we get. 1 means "yes", 2 - "no". 3 means "yes", but logicaly assigned. 91 means "never used hallucinogens", 94 - "don't know", 97 - "refused".&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"ANSWER"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Yes"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"No"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"Yes (logicaly assigned)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                 &lt;span class="s2"&gt;"Never"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"Don't know"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"Refused"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[10]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div style="max-width:1500px;overflow:auto;"&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;COUNT&lt;/th&gt;
-&lt;th&gt;PERCENT&lt;/th&gt;
-&lt;th&gt;ANSWER&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;LSD&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;3647&lt;/td&gt;
-&lt;td&gt;6.598755&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;3759&lt;/td&gt;
-&lt;td&gt;6.801404&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;0.003619&lt;/td&gt;
-&lt;td&gt;Yes (logicaly assigned)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;91&lt;/th&gt;
-&lt;td&gt;47816&lt;/td&gt;
-&lt;td&gt;86.516610&lt;/td&gt;
-&lt;td&gt;Never&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;94&lt;/th&gt;
-&lt;td&gt;39&lt;/td&gt;
-&lt;td&gt;0.070565&lt;/td&gt;
-&lt;td&gt;Don't know&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;97&lt;/th&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;0.009047&lt;/td&gt;
-&lt;td&gt;Refused&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;With that data we can constract a pie chart. For well-looking would be better to put down items with percentage lower than 1.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
-&lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;lsd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'PERCENT'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="s1"&gt;'PERCENT'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pie&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;labels&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Yes'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'No'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Never'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-                             &lt;span class="n"&gt;colors&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'yellowgreen'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'gold'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'lightskyblue'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-                            &lt;span class="n"&gt;explode&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
-                            &lt;span class="n"&gt;autopct&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%1.1f%%&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;shadow&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;suptitle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Have you ever, even once, used LSD, also called "acid"?'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'equal'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdEAAAEECAYAAAB3MA4HAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">"34933-0001-Data.tsv"</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/DrugUse/ICPSR_34933/DS0001/</span><span class="si">{0}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_name</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>CASEID</th>
+<th>QUESTID2</th>
+<th>CIGEVER</th>
+<th>CIGOFRSM</th>
+<th>CIGWILYR</th>
+<th>CIGTRY</th>
+<th>CIGYFU</th>
+<th>CIGMFU</th>
+<th>CIGREC</th>
+<th>CIG30USE</th>
+<th>...</th>
+<th>IIEMPSTY</th>
+<th>II2EMSTY</th>
+<th>EMPSTAT4</th>
+<th>IIEMPST4</th>
+<th>II2EMST4</th>
+<th>PDEN00</th>
+<th>COUTYP2</th>
+<th>ANALWT_C</th>
+<th>VESTR</th>
+<th>VEREP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>50886467</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>991</td>
+<td>9991</td>
+<td>91</td>
+<td>91</td>
+<td>91</td>
+<td>...</td>
+<td>1</td>
+<td>1</td>
+<td>99</td>
+<td>9</td>
+<td>9</td>
+<td>2</td>
+<td>2</td>
+<td>1275.597449</td>
+<td>30054</td>
+<td>2</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2</td>
+<td>13766883</td>
+<td>2</td>
+<td>99</td>
+<td>99</td>
+<td>991</td>
+<td>9991</td>
+<td>91</td>
+<td>91</td>
+<td>91</td>
+<td>...</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>5191.071173</td>
+<td>30031</td>
+<td>1</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>17772877</td>
+<td>2</td>
+<td>99</td>
+<td>99</td>
+<td>991</td>
+<td>9991</td>
+<td>91</td>
+<td>91</td>
+<td>91</td>
+<td>...</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>419.742011</td>
+<td>30056</td>
+<td>2</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>45622817</td>
+<td>1</td>
+<td>99</td>
+<td>99</td>
+<td>13</td>
+<td>9999</td>
+<td>99</td>
+<td>2</td>
+<td>93</td>
+<td>...</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>1449.303889</td>
+<td>30054</td>
+<td>1</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>17239390</td>
+<td>1</td>
+<td>99</td>
+<td>99</td>
+<td>11</td>
+<td>9999</td>
+<td>99</td>
+<td>4</td>
+<td>93</td>
+<td>...</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>15344.293577</td>
+<td>30012</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>5 rows × 3120 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I decided to start with LSD interview item. These variables I found in the codebook:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>LSD -- EVER USED LSD ("ACID")</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>LSDAGE -- AGE WHEN FIRST USED LSD</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>LSDAGLST -- HOW OLD WERE YOU THE LAST TIME USED LSD</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We should clean data for better usability and hepling make analysis more quickly (I added some unfamiliar variables for future):</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [6]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">needed_fields</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"QUESTID2"</span><span class="p">,</span> <span class="s2">"LSD"</span><span class="p">,</span> <span class="s2">"LSDAGE"</span><span class="p">,</span> <span class="s2">"LSDAGLST"</span><span class="p">,</span> 
+                 <span class="s2">"CIGTRY"</span><span class="p">,</span> <span class="s2">"CIG30AV"</span><span class="p">,</span> <span class="s2">"CIGAGE"</span><span class="p">,</span> <span class="s2">"ALCYRTOT"</span><span class="p">,</span> 
+                 <span class="s2">"COCEVER"</span><span class="p">,</span> <span class="s2">"HEREVER"</span><span class="p">,</span> <span class="s2">"CRKEVER"</span><span class="p">,</span> <span class="s2">"METHDES"</span><span class="p">,</span> 
+                 <span class="s2">"DIETPILS"</span><span class="p">,</span> <span class="s2">"MJEVER"</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">needed_fields</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, I want to know how much people ever try LSD:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [9]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lsd</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'LSD'</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s2">"QUESTID2"</span><span class="p">:</span> <span class="s1">'count'</span><span class="p">})</span>
+<span class="n">lsd</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'COUNT'</span><span class="p">]</span>
+<span class="n">lsd_prc</span> <span class="o">=</span> <span class="n">lsd</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">100</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+<span class="n">lsd_prc</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'PERCENT'</span><span class="p">]</span>
+<span class="n">lsd</span> <span class="o">=</span> <span class="n">lsd</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lsd_prc</span><span class="p">)</span>
+<span class="n">lsd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>COUNT</th>
+<th>PERCENT</th>
+</tr>
+<tr>
+<th>LSD</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1</th>
+<td>3647</td>
+<td>6.598755</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3759</td>
+<td>6.801404</td>
+</tr>
+<tr>
+<th>3</th>
+<td>2</td>
+<td>0.003619</td>
+</tr>
+<tr>
+<th>91</th>
+<td>47816</td>
+<td>86.516610</td>
+</tr>
+<tr>
+<th>94</th>
+<td>39</td>
+<td>0.070565</td>
+</tr>
+<tr>
+<th>97</th>
+<td>5</td>
+<td>0.009047</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Transcript that and look what we get. 1 means "yes", 2 - "no". 3 means "yes", but logicaly assigned. 91 means "never used hallucinogens", 94 - "don't know", 97 - "refused".</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [10]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lsd</span><span class="p">[</span><span class="s2">"ANSWER"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Yes"</span><span class="p">,</span> <span class="s2">"No"</span><span class="p">,</span> <span class="s2">"Yes (logicaly assigned)"</span><span class="p">,</span> 
+                 <span class="s2">"Never"</span><span class="p">,</span> <span class="s2">"Don't know"</span><span class="p">,</span> <span class="s2">"Refused"</span><span class="p">]</span>
+<span class="n">lsd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>COUNT</th>
+<th>PERCENT</th>
+<th>ANSWER</th>
+</tr>
+<tr>
+<th>LSD</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1</th>
+<td>3647</td>
+<td>6.598755</td>
+<td>Yes</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3759</td>
+<td>6.801404</td>
+<td>No</td>
+</tr>
+<tr>
+<th>3</th>
+<td>2</td>
+<td>0.003619</td>
+<td>Yes (logicaly assigned)</td>
+</tr>
+<tr>
+<th>91</th>
+<td>47816</td>
+<td>86.516610</td>
+<td>Never</td>
+</tr>
+<tr>
+<th>94</th>
+<td>39</td>
+<td>0.070565</td>
+<td>Don't know</td>
+</tr>
+<tr>
+<th>97</th>
+<td>5</td>
+<td>0.009047</td>
+<td>Refused</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>With that data we can constract a pie chart. For well-looking would be better to put down items with percentage lower than 1.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [11]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">lsd</span><span class="p">[</span><span class="n">lsd</span><span class="p">[</span><span class="s1">'PERCENT'</span><span class="p">]</span> <span class="o">>=</span> <span class="mi">1</span><span class="p">][</span><span class="s1">'PERCENT'</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Yes'</span><span class="p">,</span> <span class="s1">'No'</span><span class="p">,</span> <span class="s1">'Never'</span><span class="p">],</span>
+                             <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'yellowgreen'</span><span class="p">,</span> <span class="s1">'gold'</span><span class="p">,</span> <span class="s1">'lightskyblue'</span><span class="p">],</span>
+                            <span class="n">explode</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                            <span class="n">autopct</span> <span class="o">=</span> <span class="s1">'</span><span class="si">%1.1f%%</span><span class="s1">'</span><span class="p">,</span> <span class="n">shadow</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">'Have you ever, even once, used LSD, also called "acid"?'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdEAAAEECAYAAAB3MA4HAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8jef/x/HXOZkne4pMMoyE2MSI2rRqU6O1qaqiRilV
 ahVFq5QqQogVu3bt2nuP2EEIEtl7Xr8/8s35SWNERE7G9Xw8PCTnXPd93vfJfd+fc1/3de5bIYQQ
 SJIkSZL0zpSaDiBJkiRJhZUsopIkSZKUS7KISpIkSVIuySIqSZIkSbkki6gkSZIk5ZIsopIkSZKU
@@ -1859,46 +1926,46 @@ ASejASejEb3e8ReXdm02G2UlJRQXF1FdVYmpuprqn99MP79Vm6qpNpmorjahKApGgwG9Xo/RoMdg
 NGIwGNEbDBiNRvQGI87Oznj5+OLq5obZYqXaZMJkMqPCjUwe7m40DgmmWZNQAv39CAzww8l4d0bE
 QtgLKVEhhBDiNtWtmQ9CCCFEPSIlKoQQQtwmKVEhhBDiNkmJCiGEELdJSlQIIYS4TVKiQgghxG36
 H+Jxs+Gc3rpdAAAAAElFTkSuQmCC
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So, it's only 6.6% ever try LSD. Does it means hippies are still alive? It's okey. Still, we have another interesting variable: age when first used lsd. For this data type would be more graphically to constract histogram. For this time I defined a function for histogram, because we will need it in future.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;xlabel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;xsteps&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'green'&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_age&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&lt;&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_age&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;color&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bins&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;grid&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;suptitle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xticks&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;xsteps&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+">
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So, it's only 6.6% ever try LSD. Does it means hippies are still alive? It's okey. Still, we have another interesting variable: age when first used lsd. For this data type would be more graphically to constract histogram. For this time I defined a function for histogram, because we will need it in future.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [12]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">''</span><span class="p">,</span> <span class="n">xlabel</span> <span class="o">=</span> <span class="s1">''</span><span class="p">,</span> <span class="n">xsteps</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'green'</span><span class="p">):</span>
+    <span class="n">lsd_age</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o"><</span> <span class="nb">max</span><span class="p">][</span><span class="n">field</span><span class="p">]</span>
+    <span class="n">lsd_age</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="nb">max</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">xlabel</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">xsteps</span><span class="p">))</span>
     
-&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'LSDAGE'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;68&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'How old were you the first time you used LSD?'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'Ages of first use LSD'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'pink'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZMAAAEhCAYAAAC6Hk0fAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+<span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">'LSDAGE'</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> 
+     <span class="s1">'How old were you the first time you used LSD?'</span><span class="p">,</span> 
+     <span class="s1">'Ages of first use LSD'</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">'pink'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZMAAAEhCAYAAAC6Hk0fAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XtYjPn/P/DnPRUddSDKsmpJUyRaZx86aovFKmHXobSL
 XcddFotFWMcW2SU+dpEPLTkta1GR0joVJctqI4Rdie2ETirv3x9+c39NM9OUZszcs6/HdXVdzT33
 POc190z3u/v9umeGY4wxEEIIIQ0g0nQBhBBChI8GE0IIIQ1GgwkhhJAGo8GEEEJIg9FgQgghpMFo
@@ -2196,38 +2263,38 @@ l9w6SkpKYG1tzf/MnTsX9vb2mDJlChwcHNCpUyecPn0a69at4x/f6tWr4ejoyB/hxcXFyT0yJEQR
 +gh6orXKyspgZGSEoqIi9OnTBxkZGbSDI0RL0dlcRCuVlZWhU6dO0NPTg7GxMVavXk0DCSFajI5M
 CCGENBj1TAghhDQYDSaEEEIajAYTQgghDUaDCSGEkAajwYQQQkiD0WBCCCGkwf4fFdseK0LL3q0A
 AAAASUVORK5CYII=
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;What a beatiful colorful childhood it was! I guess, we shouldn't care about some obviously false answers like "I was 1 (2/3/..) when i first time used LSD". For now, let's look at histogram with LAST time used LSD.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [24]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'LSDAGLST'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;69&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'How old were you the last time you used LSD?'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'Ages of last use LSD'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'red'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZEAAAEhCAYAAAC+650iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What a beatiful colorful childhood it was! I guess, we shouldn't care about some obviously false answers like "I was 1 (2/3/..) when i first time used LSD". For now, let's look at histogram with LAST time used LSD.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [24]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">'LSDAGLST'</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> 
+     <span class="s1">'How old were you the last time you used LSD?'</span><span class="p">,</span> 
+     <span class="s1">'Ages of last use LSD'</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">'red'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZEAAAEhCAYAAAC+650iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XdYFOfaBvB7QJTeDAYMUWxUESsWohQRW9QgqHhERWNM
 Yo0ajy0q0WBDDWoiMQaDGmxYowdBRRaODVRixw4aPxEVUOn1/f4gO8eFhV1gly08v+vaS2d25p53
 Z3fnZd5ndpdjjDEQQgghdaCh6AYQQghRXdSJEEIIqTPqRAghhNQZdSKEEELqjDoRQgghdUadCCGE
@@ -2537,38 +2604,38 @@ zM3N4ejoCBsbG6xZs6ba9trY2MDMzAxmZmYYP3482rVrh6CgILRv3x6dOnXCli1bsGvXLv6xRURE
 wNbWFu3bt8fBgwcRHR2tfL9ZQZQWfRU8UWoFBQXQ0dHBmzdv4OLigmvXrokd4iKEKAbVRIjSKigo
 QKdOnaCpqQldXV2sW7eOOhBClAydiRBCCKkzqokQQgipM+pECCGE1Bl1IoQQQuqMOhFCCCF1Rp0I
 IYSQOqNOhBBCSJ39P/RrZtMmMzT/AAAAAElFTkSuQmCC
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Interesting, some (and many) people said they last time used LSD in 18. Should we trust them? I don't think so. I think it's time for take a rest of hallucinogens and constract same histograms for smoking people.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [15]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'CIGTRY'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;69&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'How old were you the first time you smoked part or all of a cigarette?'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'Ages of first smoked a cigarette'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'burlywood'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkIAAAEhCAYAAACTL89pAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Interesting, some (and many) people said they last time used LSD in 18. Should we trust them? I don't think so. I think it's time for take a rest of hallucinogens and constract same histograms for smoking people.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [15]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">'CIGTRY'</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> 
+     <span class="s1">'How old were you the first time you smoked part or all of a cigarette?'</span><span class="p">,</span> 
+     <span class="s1">'Ages of first smoked a cigarette'</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">'burlywood'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkIAAAEhCAYAAACTL89pAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XlcVPX+P/DXGVBkAFkEhdzAlFXcCtyuskgut9Sv4kKG
 SXrb9KaVddMMRbtYSlqaadZNIc1wuSCpiAuKZIakiLcbSte1DdAQUVFc4PP7wx8nDwww6NDMYV7P
 x4PHw/nMOe95z2H4zNvzeZ8ZSQghQERERGSGNMZOgIiIiMhYWAgRERGR2WIhRERERGaLhRARERGZ
@@ -2946,50 +3013,50 @@ ubm50Ol0/jrq6+un5RyoT7Ozs+F2uyGTyZCXl+d/pCh0LT744AMcO3YMSqUSKpUKLS0tAIDnnnsO
 tML+PbhPGfv34TVCjN0AbrcbWq0WCxYswKJFi1BSUsL/Yf7LcZ8y9u/EM0KMMcYYC1m8Rogxxhhj
 IYsHQowxxhgLWTwQYowxxljI4oEQY4wxxkIWD4QYY4wxFrJ4IMQYY4yxkPUfu8CvNVNy7AoAAAAA
 SUVORK5CYII=
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;hist(data, 'CIGAGE', 69, 'How old were you when you first started smoking cigarettes every day?', 'Ages of first started smoking cigarettes', 5, 'brown')&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We migth compare these histograms for visual clarity and look at them a little closer:&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [24]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'CIGTRY'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'How old were you the first time you smoked part or all of a cigarette?'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'Ages of first smoked a cigarette'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'burlywood'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'CIGAGE'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'How old were you when you first started smoking cigarettes every day?'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-     &lt;span class="s1"&gt;'Ages of first started smoking cigarettes'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'brown'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlIAAAEhCAYAAAC0gU6BAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>hist(data, 'CIGAGE', 69, 'How old were you when you first started smoking cigarettes every day?', 'Ages of first started smoking cigarettes', 5, 'brown')</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We migth compare these histograms for visual clarity and look at them a little closer:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [24]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">'CIGTRY'</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> 
+     <span class="s1">'How old were you the first time you smoked part or all of a cigarette?'</span><span class="p">,</span> 
+     <span class="s1">'Ages of first smoked a cigarette'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'burlywood'</span><span class="p">)</span>
+<span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">'CIGAGE'</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> 
+     <span class="s1">'How old were you when you first started smoking cigarettes every day?'</span><span class="p">,</span> 
+     <span class="s1">'Ages of first started smoking cigarettes'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'brown'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlIAAAEhCAYAAAC0gU6BAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XtcVHX+P/DXmUHudwHBVgVUYEASNcgsA5FMu2heULyt
 1Nra+lgvmZqXUFhXzVtlfpdvto9N3MyVKM38ZVhhyJop6wW7oGzmpRsQIaJCAsrn9wffOTHMhWEY
 GQ/zej4e83hwzpz3+XzmnDOf8+F83ueMJIQQICIiIqI2U9m6AkRERERKxY4UERERkYXYkSIiIiKy
@@ -3402,76 +3469,76 @@ FBTAxsYGT548ga+vL86fP2/RbSnmzaOwsBBKpRIKhQJpaWlYuHAhfvnll2r3YzAYhGejli9fjho1
 amDmzJn/dLoMw1gJr0gxzD9EQUGB8JBvnTp1sHz5ci6i3mLS09MRHBwMGxsbNG3aFOvXr7eqn3Xr
 1iEmJga2trZwdXXFTz/99A9nyjDM/wOvSDEMwzAMw1gJP2zOMAzDMAxjJVxIMQzDMAzDWAkXUgzD
 MAzDMFbChRTDMAzDMIyVcCHFMAzDMAxjJVxIMQzDMAzDWMn/AO/AAsudir4WAAAAAElFTkSuQmCC
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So many teenagers tried so early, but only in 18 is maximum frequency to start smoking everyday. Dear parents, I think you should take it into consideration.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Now, let's look how using LSD (ever once) correlate with using other grugs. I constract bar chart with yes-no answers to illustate this correlation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [30]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;lsd_something_prc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_try&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"LSD"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;no_lsd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"LSD"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_try&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lsd_try&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;lsd_try&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&lt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;agg&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s2"&gt;"QUESTID2"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'count'&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
-    &lt;span class="n"&gt;no_lsd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;no_lsd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;no_lsd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&lt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;field&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;agg&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s2"&gt;"QUESTID2"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'count'&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_try&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'COUNT'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_try&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lsd_try&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;()))&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_try&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Ever used lsd'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;no_lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'COUNT'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;no_lsd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;no_lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;()))&lt;/span&gt;
-    &lt;span class="n"&gt;no_lsd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Never used lsd'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_coc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lsd_try&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;no_lsd&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;lsd_coc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'pink'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'blue'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;grid&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;suptitle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xticks&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Yes"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"No"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;rotation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'horizontal'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Percent'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ymax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+">
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So many teenagers tried so early, but only in 18 is maximum frequency to start smoking everyday. Dear parents, I think you should take it into consideration.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, let's look how using LSD (ever once) correlate with using other grugs. I constract bar chart with yes-no answers to illustate this correlation.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [30]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">lsd_something_prc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+    <span class="n">lsd_try</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">"LSD"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">no_lsd</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">"LSD"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="n">lsd_try</span> <span class="o">=</span> <span class="n">lsd_try</span><span class="p">[</span><span class="n">lsd_try</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o"><=</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">field</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s2">"QUESTID2"</span><span class="p">:</span> <span class="s1">'count'</span><span class="p">})</span>
+    <span class="n">no_lsd</span> <span class="o">=</span> <span class="n">no_lsd</span><span class="p">[</span><span class="n">no_lsd</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o"><=</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">field</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s2">"QUESTID2"</span><span class="p">:</span> <span class="s1">'count'</span><span class="p">})</span>
+    <span class="n">lsd_try</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'COUNT'</span><span class="p">]</span>
+    <span class="n">lsd_try</span> <span class="o">=</span> <span class="n">lsd_try</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">x</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+    <span class="n">lsd_try</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Ever used lsd'</span><span class="p">]</span>
+    <span class="n">no_lsd</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'COUNT'</span><span class="p">]</span>
+    <span class="n">no_lsd</span> <span class="o">=</span> <span class="n">no_lsd</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">x</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+    <span class="n">no_lsd</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Never used lsd'</span><span class="p">]</span>
+    <span class="n">lsd_coc</span> <span class="o">=</span> <span class="n">lsd_try</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">no_lsd</span><span class="p">)</span>
+    <span class="n">lsd_coc</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">'pink'</span><span class="p">,</span> <span class="s1">'blue'</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="s2">"Yes"</span><span class="p">,</span> <span class="s2">"No"</span><span class="p">],</span> <span class="n">rotation</span><span class="o">=</span><span class="s1">'horizontal'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Percent'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="n">ymax</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
-&lt;span class="n"&gt;lsd_something_prc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"MJEVER"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                  &lt;span class="s2"&gt;"Have you ever, even once, used marijuana or hashish?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;lsd_something_prc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"COCEVER"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                  &lt;span class="s2"&gt;"Have you ever, even once, used any form of cocaine?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;lsd_something_prc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"HEREVER"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                  &lt;span class="s2"&gt;"Have you ever, even once, used heroin?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;lsd_something_prc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"CRKEVER"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                  &lt;span class="s2"&gt;"Have you ever, even once, used crack?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;lsd_something_prc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"DIETPILS"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                  &lt;span class="s2"&gt;"Have you ever, even once, used prescription diet pills, such as Amphetamines (etc)?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;lsd_something_prc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"METHDES"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                  &lt;span class="s2"&gt;"Have you ever, even once, used Methamphetamine, Desoxyn, or Methedrine?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAccAAAESCAYAAACIDx4uAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+<span class="n">lsd_something_prc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">"MJEVER"</span><span class="p">,</span> 
+                  <span class="s2">"Have you ever, even once, used marijuana or hashish?"</span><span class="p">)</span>
+<span class="n">lsd_something_prc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">"COCEVER"</span><span class="p">,</span> 
+                  <span class="s2">"Have you ever, even once, used any form of cocaine?"</span><span class="p">)</span>
+<span class="n">lsd_something_prc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">"HEREVER"</span><span class="p">,</span> 
+                  <span class="s2">"Have you ever, even once, used heroin?"</span><span class="p">)</span>
+<span class="n">lsd_something_prc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">"CRKEVER"</span><span class="p">,</span> 
+                  <span class="s2">"Have you ever, even once, used crack?"</span><span class="p">)</span>
+<span class="n">lsd_something_prc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">"DIETPILS"</span><span class="p">,</span> 
+                  <span class="s2">"Have you ever, even once, used prescription diet pills, such as Amphetamines (etc)?"</span><span class="p">)</span>
+<span class="n">lsd_something_prc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">"METHDES"</span><span class="p">,</span> 
+                  <span class="s2">"Have you ever, even once, used Methamphetamine, Desoxyn, or Methedrine?"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAccAAAESCAYAAACIDx4uAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XlYFWX7B/DvHJB9X5RFFNQCUVQ0LVEUcSVIc8fUELFF
 zdLMfNUybSGNN01zyQUXRAXBXREX1F9laWZZZoY7ViooErKouDy/P3iZPIdtQPScw/l+rovrYvZ7
 1vvM8zwzIwkhBIiIiEim0nYAREREuobJkYiISAOTIxERkQYmRyIiIg1MjkRERBqYHImIiDRUmhxn
@@ -3730,12 +3797,12 @@ Fsn9OnbsiMTERABAYmIiOnXqpK3wSEcxOVK1PfyVg1mzZuHatWto2rQpvL29ER8fDwCIjY2Fp6cn
 mjdvjpCQEDRr1kybIZMBefgu8aWXXpJLOQBg/vz5WLFiBXx8fLB69WrMnz9fGyGSDmOdIxERkQbe
 ORIREWlgciQiItLA5EhERKSByZGIiEgDkyMREZEGJkciIiINTI5EREQamByJiIg0/D/Fjl3lelc2
 0QAAAABJRU5ErkJggg==
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbwAAAESCAYAAACGpmBBAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbwAAAESCAYAAACGpmBBAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XlcVOX+B/DPGZB9X5RFE9TugIpbV0uURNSUsPwpppiV
 W5ua92pm3bRMW7waZddSu5orbiDmmrii3MqyzDItzV3MDRSQXUH9/v7gcq7DIAwCMwzzeb9e83px
 1ufLmXPOd87zPDOPIiICIiKiek5j6gCIiIiMgQmPiIgsAhMeERFZBCY8IiKyCEx4RERkEZjwiIjI
@@ -3987,12 +4054,12 @@ b1/ExsbC19eXn6TJqBRFwaRJkzB//nx1XteuXZGQkAAASEhIwKOPPmqq8KgOYMIjgyiKon5qnjlz
 Jq5evYrg4GBotVqsXLkSALB48WIEBASgdevWiIyMRKtWrUwZMlmIu5/mnn76abUmAgA+/fRTLFmy
 BEFBQVi+fDk+/fRTU4RIdQTb8IiIyCLwCY+IiCwCEx4REVkEJjwiIrIITHhERGQRmPCIiMgiMOER
 EZFFYMIjIiKLwIRHREQW4f8B9IjrApTFCl0AAAAASUVORK5CYII=
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYEAAAESCAYAAAAbq2nJAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYEAAAESCAYAAAAbq2nJAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XlcFfX6B/DPHJB9R5RFFNQb4E6ZJooiakpaXsUF0wI1
 WzTLJeumZtpCJve2mNp1R0QFNZdIXEFuqZlmmea+YuaCIoEsisvz+4OYn0e2A7LP5/16ndeL2R/O
 OTPPmXm+M19FRARERKRJuqoOgIiIqg6TABGRhjEJEBFpGJMAEZGGMQkQEWkYkwARkYbVyCQwffp0
@@ -4216,12 +4283,12 @@ GIETJ07g8ccf17txj6ii9e3bF0ePHsWpU6f06gL8jVrxmAQ04MEdqUePHpg5c6Y6ftOmTbh37x7i
 mjlzJq5duwYfHx94eXkhOjoaALB48WJ4eHigRYsWCAoKQvPmzasyZNKIB3/1P//88+oZKwDMnj0b
 S5Ysgbe3N5YtW4bZs2dXRYi1HmsCREQaxjMBIiINYxIgItIwJgEiIg1jEiAi0jAmASIiDWMSICLS
 MCYBIiINYxIgItKw/wMq3msOCeueegAAAABJRU5ErkJggg==
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYEAAAESCAYAAAAbq2nJAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYEAAAESCAYAAAAbq2nJAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XlYFXX7P/D3HJR9FUEWF0ieB1BxadFESUBNCcuv4oKp
 uVdulVullmmLaTxPi5nlhoqooOYSSW4g2eZWmbtoKmQuIBIIoqDevz94mJ9HtqPCYZn367rOpbPf
 nDNn7jNzf2Y+iogIiIhIk3RVHQAREVUdJgEiIg1jEiAi0jAmASIiDWMSICLSMCYBIiINqzVJYObM
@@ -4443,12 +4510,12 @@ hw/HyZMn8eijj+rduEdU2Xr27Iljx47h1KlTenUB/katfEwCGnD3F6lr166YM2eOOn7Lli24ffs2
 62rOnDlIT0+Hr68vvL29ER0dDQBYunQpPDw80KJFC4SEhKB58+ZVGTJpxN2/+p9//nn1jBUA5s2b
 h8jISPj4+GDFihWYN29eVYRY67EmQESkYTwTICLSMCYBIiINYxIgItIwJgEiIg1jEiAi0jAmASIi
 DWMSICLSMCYBIiIN+39llIxaen6YCwAAAABJRU5ErkJggg==
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAESCAYAAADnpP23AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAESCAYAAADnpP23AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XlYVGX/P/D3GfZ9ABEQUUh7wAW30hJFgdQ0TR93TAuX
 LJesTM3UMvUpH5cy8zHNxH1DNNRQXFGyLNPMysx9wUpFRWITROXz+8PfnK/DsAwKDTO8X9fFdXHm
 nHOfz9nu+cyZ+75HEREBEREREZEF0Jg6ACIiIiKi8sLkloiIiIgsBpNbIiIiIrIYTG6JiIiIyGIw
@@ -4771,12 +4838,12 @@ X/Pz86qvr2dChqLyeDyamprS8vKy/a67u1vpdFqSlE6n1dPT41Q8AA6g3AIoyOPx2NMw0zT18vKi
 cDispqYmpVIpSdLa2pqCwaBaWlpkGIaam5udjIwS8XFKOzIyYq8wSFIymdT6+rpCoZA2NzeVTCad
 iAjAIey5BQAAgGswuQUAAIBrUG4BAADgGpRbAAAAuAblFgAAAK5BuQUAAIBrUG4BAADgGpRbAAAA
 uAblFgAAAK7xBw1CNo7AckPhAAAAAElFTkSuQmCC
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAESCAYAAABti2T2AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+">
+</img></div>
+</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAESCAYAAABti2T2AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XlcVOX+B/DPGfZ9E9lcIO2CC26lJYoiroRdc8elQG3V
 7GpupWXa4rW4aovZdd9QQUwlEleUa1mmlZWluYOZCorErqh8f3/QnB8jIAOODjCf9+vFS8/+nTPP
 eeY7z3meM4qICIiIiIjIZGiMHQARERERPVhMAImIiIhMDBNAIiIiIhPDBJCIiIjIxDABJCIiIjIx
@@ -5080,31 +5147,31 @@ iYno27cvoqOj4eXlxZYWeqAURcGUKVOwaNEidV7nzp0RFxcHAIiLi0OXLl2MFR4R/Y0JIFEtoiiK
 +GOsWLECAQEBWL16NT7++GNjhEhEpbAPIBEREZGJYQsgERERkYlhAkhERERkYpgAEhEREZkYJoBE
 REREJoYJIBEREZGJYQJIREREZGKYABIRERGZGCaARERERCbm/wDYxzxkMMW+lgAAAABJRU5ErkJg
 gg==
-"&gt;
-&lt;/img&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;What does it means? Maybe peole who ever tried any grugs more open to experimentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;At this interesting point, I want to finish my first data analysis. Here are a lot of data in this database, so analysis might become endless. But for now I want to say goodbye and wish you good health.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+">
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What does it means? Maybe peole who ever tried any grugs more open to experimentation.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At this interesting point, I want to finish my first data analysis. Here are a lot of data in this database, so analysis might become endless. But for now I want to say goodbye and wish you good health.</p>
+</div>
+</div>
+</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -5130,5 +5197,54 @@ gg==
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;
-</summary><category term="matplotlib"></category><category term="data"></category><category term="analisys"></category><category term="python"></category></entry></feed>
+</script>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://oftomorrow.github.io/tag/matplotlib.html">matplotlib</a>
+      <a href="http://oftomorrow.github.io/tag/data.html">data</a>
+      <a href="http://oftomorrow.github.io/tag/analisys.html">analisys</a>
+      <a href="http://oftomorrow.github.io/tag/python.html">python</a>
+    </p>
+  </div>
+</article>
+
+    <footer>
+        <p>&copy; Dinara S. 2016</p>
+<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " A Pelican Blog ",
+  "url" : "http://oftomorrow.github.io",
+  "image": "https://scontent.xx.fbcdn.net/v/t1.0-9/13770360_1345301725499460_6960922626978449112_n.jpg?oh=dfa2d248e5e7674718e29adc75846f22&oe=587CBEC6",
+  "description": ""
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "Small drug use data analysis",
+  "headline": "Small drug use data analysis",
+  "datePublished": "2016-09-06 17:20:00+02:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "Dinara S.",
+    "url": "http://oftomorrow.github.io/author/dinara-s.html"
+  },
+  "image": "https://scontent.xx.fbcdn.net/v/t1.0-9/13770360_1345301725499460_6960922626978449112_n.jpg?oh=dfa2d248e5e7674718e29adc75846f22&oe=587CBEC6",
+  "url": "http://oftomorrow.github.io/drug-use-analysis.html",
+  "description": "For my first reseach I was looking for health data. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. These data are available to the general public, so I choosed it."
+}
+</script></body>
+</html>
