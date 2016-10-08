@@ -21,11 +21,11 @@
 
 
 <meta name="author" content="Dinara S." />
-<meta name="description" content="In this post I want give a simplified explanation what linear regression model is and how to apply this for data predictions using python and some open python libraries (including scikit-learning). Supervised learning is one of major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value)." />
+<meta name="description" content="In this post I want give a simplified explanation of what the linear regression model is and how to apply it for data predictions using python and some open python libraries (including scikit-learning). Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value)." />
 <meta name="keywords" content="data, analisys, python, pandas, matplotlib, scikit-learn, numpy, machine learning, linear regression">
 <meta property="og:site_name" content="A Pelican Blog"/>
-<meta property="og:title" content="Prediction future stock prices based on historical data using simplified linear regression"/>
-<meta property="og:description" content="In this post I want give a simplified explanation what linear regression model is and how to apply this for data predictions using python and some open python libraries (including scikit-learning). Supervised learning is one of major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value)."/>
+<meta property="og:title" content="Future stock prices prediction based on the historical data using simplified linear regression"/>
+<meta property="og:description" content="In this post I want give a simplified explanation of what the linear regression model is and how to apply it for data predictions using python and some open python libraries (including scikit-learning). Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value)."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://oftomorrow.github.io/linear-regression.html"/>
 <meta property="og:type" content="article"/>
@@ -43,7 +43,7 @@
 <meta property="article:tag" content="machine learning"/>
 <meta property="article:tag" content="linear regression"/>
 <meta property="og:image" content="https://scontent.xx.fbcdn.net/v/t1.0-9/13770360_1345301725499460_6960922626978449112_n.jpg?oh=dfa2d248e5e7674718e29adc75846f22&oe=587CBEC6">
-  <title>A Pelican Blog &ndash; Prediction future stock prices based on historical data using simplified linear regression</title>
+  <title>A Pelican Blog &ndash; Future stock prices prediction based on the historical data using simplified linear regression</title>
 </head>
 <body>
   <aside>
@@ -72,7 +72,7 @@
 
 <article>
   <header>
-    <h1 id="linear-regression">Prediction future stock prices based on historical data using simplified linear regression</h1>
+    <h1 id="linear-regression">Future stock prices prediction based on the historical data using simplified linear regression</h1>
     <p>Posted on Чт. 06 Октябрь 2016 in <a href="https://oftomorrow.github.io/category/data-analysis.html">data analysis</a></p>
   </header>
   <div>
@@ -1053,9 +1053,9 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this post I want give a simplified explanation what linear regression model is and how to apply this for data predictions using python and some open python libraries (including scikit-learning).</p>
-<p>Supervised learning is one of major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value).</p>
-<p>Here is the Machine Learning project that tries to predict stock data using linear regression algorithm. Linear regression is the most basic and commonly used predictive analysis. All input data should be put in the matrix X, each column of the matrix consists a data example. And the "answers" should be put in vector y. Then we can advance the hypothesis:</p>
+<p>In this post I want give a simplified explanation of what the linear regression model is and how to apply it for data predictions using python and some open python libraries (including scikit-learning).</p>
+<p>Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value).</p>
+<p>Here is the Machine Learning project described that tries to predict stock data using linear regression algorithm. Linear regression is the most basic and commonly used predictive analysis. All input data should be put in the matrix X, each column of the matrix represents a data example. And the "answers" should be put in vector y. Then we can advance the hypothesis:</p>
 \begin{equation}
 h_{\theta}(x) = \theta^T X,
 \end{equation}<p>where X $-$ matrix $(n+1) \times m$,
@@ -1065,9 +1065,9 @@ n $-$ number of features (parameters).</p>
 <p>Since our goal is to train the model as close as possible to real values, we should minimize the cost function $J(\theta)$:</p>
 \begin{equation}
 J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(X^{(i)}) - y^{(i)})^2.
-\end{equation}<p>This is a simplified explanation for a linear regression model. Now we can test it on a real data.</p>
-<p><i><b>Please, pay attention! This project is used for studying how to apply linear regression. If you want to use this project in real life, all responsibility is on you! Author doesn't respond for results of using this project in real-life stock predictions.</b></i></p>
-<p>I assume everybody knows how stock data looks like in depend of time. Here is the example with Facebook stock data:</p>
+\end{equation}<p>This is a simplified explanation of a linear regression model. Now we can test it on a real data.</p>
+<p><i><b>Please, pay attention! This project is used for studying of the linear regression application. If you want to use this project in a real life, all responsibility lies with you! Author doesn't take any responsibility for results of using this project in real-life stock predictions.</b></i></p>
+<p>I assume everybody knows how time-dependent stock data looks like. Here is the example of the Facebook stock data:</p>
 </div>
 </div>
 </div>
@@ -1667,7 +1667,7 @@ HCeV/H+NV0g1fm4mGwAAAABJRU5ErkJggg==
 <li><a href="http://www.numpy.org/">numpy</a></li>
 <li><a href="https://ipython.org/">ipython</a></li>
 </ul>
-<p>For training the model I split data on two sets, one for training and another for test. Usually, it is used 30% of data for test set and 70% for training set.</p>
+<p>For training the model I split data into two sets, one for training and another for test. Usually, it is used 30% of data for test set and 70% for training set.</p>
 </div>
 </div>
 </div>
@@ -2521,7 +2521,7 @@ SKRiREMjEolEIpFIxfg/ELCos6eiVqgAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, sum of squares on test examples is big enough, but variance score looks good, because the model fits good. The model looks even better in perspective:</p>
+<p>As you can see, sum of squares on the test examples are big enough, but variance score looks good, because the model fits good. The model looks even better in perspective:</p>
 </div>
 </div>
 </div>
@@ -3218,8 +3218,8 @@ DMMwjEDy/9dNaGPcRNfpAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This simplified model already might be useful for long-term predictions.</p>
-<p>For short-term predictions I need more accuracy. What can I do to fit better the model? For a start I add open prices to the matrix X.</p>
+<p>This simplified model might already be useful for long-term predictions.</p>
+<p>For short-term predictions I need more accuracy. What can I do to fit the model better? For a start I add open prices to the matrix X.</p>
 </div>
 </div>
 </div>
@@ -4107,8 +4107,8 @@ OE7ZcEfDcRzHcZyy8f9PA2ZNTMAL2QAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So, sum of squares looks better, and variance score too. Actually, variance score looks great, almost ideal (best possible score is 1.0).</p>
-<p>Just to satisfy my curiosity, I add more features, as open and close values previous day, open and close values two days before today and so on.</p>
+<p>So, sum of the squares looks better, and the variance score too. Actually, variance score looks great, almost ideal (best possible score is 1.0).</p>
+<p>Just to satisfy my curiosity, I added more features, as open and close values previous day, open and close values two days before today and so on.</p>
 </div>
 </div>
 </div>
@@ -4203,8 +4203,19 @@ Number of variables: 12; Residual sum of squares: 1.97; Variance score: 0.99
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So, variance score is almost the best for each cases and residual sums of squares are similar to each other. Looking at the result we can empirically choose for future predictions the case with 6 variables with the best residual sum of squares.</p>
-<p>You may download the project from <a href="https://github.com/oftomorrow/stock-prediction-lr">github</a> and try it by yourself.</p>
+<p>So, variance score is almost the best for each of the cases and residual sums of the squares are similar to each other. As you can see, the case with 6 variables possesses the lowest sum of squares. Therefore, we can empirically choose the best number of variables and use it for future predictions.</p>
+<p>You may download the project from <a href="https://github.com/oftomorrow/stock-prediction-lr">github</a> and try it yourself.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -4295,8 +4306,8 @@ Number of variables: 12; Residual sum of squares: 1.97; Variance score: 0.99
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "name": "Prediction future stock prices based on historical data using simplified linear regression",
-  "headline": "Prediction future stock prices based on historical data using simplified linear regression",
+  "name": "Future stock prices prediction based on the historical data using simplified linear regression",
+  "headline": "Future stock prices prediction based on the historical data using simplified linear regression",
   "datePublished": "2016-10-06 20:34:00+02:00",
   "dateModified": "",
   "author": {
@@ -4306,7 +4317,7 @@ Number of variables: 12; Residual sum of squares: 1.97; Variance score: 0.99
   },
   "image": "https://scontent.xx.fbcdn.net/v/t1.0-9/13770360_1345301725499460_6960922626978449112_n.jpg?oh=dfa2d248e5e7674718e29adc75846f22&oe=587CBEC6",
   "url": "https://oftomorrow.github.io/linear-regression.html",
-  "description": "In this post I want give a simplified explanation what linear regression model is and how to apply this for data predictions using python and some open python libraries (including scikit-learning). Supervised learning is one of major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value)."
+  "description": "In this post I want give a simplified explanation of what the linear regression model is and how to apply it for data predictions using python and some open python libraries (including scikit-learning). Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value)."
 }
 </script></body>
 </html>

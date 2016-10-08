@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="https://oftomorrow.github.io/" rel="alternate"></link><link href="https://oftomorrow.github.io/feeds/dinara-s.atom.xml" rel="self"></link><id>https://oftomorrow.github.io/</id><updated>2016-10-06T20:34:00+02:00</updated><entry><title>Prediction future stock prices based on historical data using simplified linear regression</title><link href="https://oftomorrow.github.io/linear-regression.html" rel="alternate"></link><published>2016-10-06T20:34:00+02:00</published><author><name>Dinara S.</name></author><id>tag:oftomorrow.github.io,2016-10-06:linear-regression.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="https://oftomorrow.github.io/" rel="alternate"></link><link href="https://oftomorrow.github.io/feeds/dinara-s.atom.xml" rel="self"></link><id>https://oftomorrow.github.io/</id><updated>2016-10-06T20:34:00+02:00</updated><entry><title>Future stock prices prediction based on the historical data using simplified linear regression</title><link href="https://oftomorrow.github.io/linear-regression.html" rel="alternate"></link><published>2016-10-06T20:34:00+02:00</published><author><name>Dinara S.</name></author><id>tag:oftomorrow.github.io,2016-10-06:linear-regression.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -976,9 +976,9 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;In this post I want give a simplified explanation what linear regression model is and how to apply this for data predictions using python and some open python libraries (including scikit-learning).&lt;/p&gt;
-&lt;p&gt;Supervised learning is one of major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value).&lt;/p&gt;
-&lt;p&gt;Here is the Machine Learning project that tries to predict stock data using linear regression algorithm. Linear regression is the most basic and commonly used predictive analysis. All input data should be put in the matrix X, each column of the matrix consists a data example. And the "answers" should be put in vector y. Then we can advance the hypothesis:&lt;/p&gt;
+&lt;p&gt;In this post I want give a simplified explanation of what the linear regression model is and how to apply it for data predictions using python and some open python libraries (including scikit-learning).&lt;/p&gt;
+&lt;p&gt;Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value).&lt;/p&gt;
+&lt;p&gt;Here is the Machine Learning project described that tries to predict stock data using linear regression algorithm. Linear regression is the most basic and commonly used predictive analysis. All input data should be put in the matrix X, each column of the matrix represents a data example. And the "answers" should be put in vector y. Then we can advance the hypothesis:&lt;/p&gt;
 \begin{equation}
 h_{\theta}(x) = \theta^T X,
 \end{equation}&lt;p&gt;where X $-$ matrix $(n+1) \times m$,
@@ -988,9 +988,9 @@ n $-$ number of features (parameters).&lt;/p&gt;
 &lt;p&gt;Since our goal is to train the model as close as possible to real values, we should minimize the cost function $J(\theta)$:&lt;/p&gt;
 \begin{equation}
 J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(X^{(i)}) - y^{(i)})^2.
-\end{equation}&lt;p&gt;This is a simplified explanation for a linear regression model. Now we can test it on a real data.&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;&lt;b&gt;Please, pay attention! This project is used for studying how to apply linear regression. If you want to use this project in real life, all responsibility is on you! Author doesn't respond for results of using this project in real-life stock predictions.&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;I assume everybody knows how stock data looks like in depend of time. Here is the example with Facebook stock data:&lt;/p&gt;
+\end{equation}&lt;p&gt;This is a simplified explanation of a linear regression model. Now we can test it on a real data.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;&lt;b&gt;Please, pay attention! This project is used for studying of the linear regression application. If you want to use this project in a real life, all responsibility lies with you! Author doesn't take any responsibility for results of using this project in real-life stock predictions.&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;I assume everybody knows how time-dependent stock data looks like. Here is the example of the Facebook stock data:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1590,7 +1590,7 @@ HCeV/H+NV0g1fm4mGwAAAABJRU5ErkJggg==
 &lt;li&gt;&lt;a href="http://www.numpy.org/"&gt;numpy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://ipython.org/"&gt;ipython&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For training the model I split data on two sets, one for training and another for test. Usually, it is used 30% of data for test set and 70% for training set.&lt;/p&gt;
+&lt;p&gt;For training the model I split data into two sets, one for training and another for test. Usually, it is used 30% of data for test set and 70% for training set.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2444,7 +2444,7 @@ SKRiREMjEolEIpFIxfg/ELCos6eiVqgAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;As you can see, sum of squares on test examples is big enough, but variance score looks good, because the model fits good. The model looks even better in perspective:&lt;/p&gt;
+&lt;p&gt;As you can see, sum of squares on the test examples are big enough, but variance score looks good, because the model fits good. The model looks even better in perspective:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3141,8 +3141,8 @@ DMMwjEDy/9dNaGPcRNfpAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;This simplified model already might be useful for long-term predictions.&lt;/p&gt;
-&lt;p&gt;For short-term predictions I need more accuracy. What can I do to fit better the model? For a start I add open prices to the matrix X.&lt;/p&gt;
+&lt;p&gt;This simplified model might already be useful for long-term predictions.&lt;/p&gt;
+&lt;p&gt;For short-term predictions I need more accuracy. What can I do to fit the model better? For a start I add open prices to the matrix X.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4030,8 +4030,8 @@ OE7ZcEfDcRzHcZyy8f9PA2ZNTMAL2QAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So, sum of squares looks better, and variance score too. Actually, variance score looks great, almost ideal (best possible score is 1.0).&lt;/p&gt;
-&lt;p&gt;Just to satisfy my curiosity, I add more features, as open and close values previous day, open and close values two days before today and so on.&lt;/p&gt;
+&lt;p&gt;So, sum of the squares looks better, and the variance score too. Actually, variance score looks great, almost ideal (best possible score is 1.0).&lt;/p&gt;
+&lt;p&gt;Just to satisfy my curiosity, I added more features, as open and close values previous day, open and close values two days before today and so on.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4126,8 +4126,19 @@ Number of variables: 12; Residual sum of squares: 1.97; Variance score: 0.99
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;So, variance score is almost the best for each cases and residual sums of squares are similar to each other. Looking at the result we can empirically choose for future predictions the case with 6 variables with the best residual sum of squares.&lt;/p&gt;
-&lt;p&gt;You may download the project from &lt;a href="https://github.com/oftomorrow/stock-prediction-lr"&gt;github&lt;/a&gt; and try it by yourself.&lt;/p&gt;
+&lt;p&gt;So, variance score is almost the best for each of the cases and residual sums of the squares are similar to each other. As you can see, the case with 6 variables possesses the lowest sum of squares. Therefore, we can empirically choose the best number of variables and use it for future predictions.&lt;/p&gt;
+&lt;p&gt;You may download the project from &lt;a href="https://github.com/oftomorrow/stock-prediction-lr"&gt;github&lt;/a&gt; and try it yourself.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
