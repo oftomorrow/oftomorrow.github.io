@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+    <meta name="author" content="Dinara Sultangulova" />
+    <meta name="description" content="This blog was created to unveil my potential in Data Science and developing and to discuss topics and problems with people holding the same view." />
+<meta property="og:site_name" content="Dinara's blog"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Dinara's blog"/>
+<meta property="og:description" content="This blog was created to unveil my potential in Data Science and developing and to discuss topics and problems with people holding the same view."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content=""/>
+<meta property="og:image" content="https://downloader.disk.yandex.ru/preview/ef94cab1b9ee018553136d821bf439d122d29d921640d9967f4408040da4870e/5b6468e3/fKqInKw3d7bLFOeFnMGnhFFOu66himU__ac9Xplfz91dhdume5fIUzE-fS2NJtyl9ZHNqQ1kw0FVSIqXd6mlMUObRrULNzPPPS2z98S0rtmr8npumZHI4midPdWhecNq?uid=0&filename=8MgB-8XfPsM.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&size=2048x2048">
+
+  <title>Dinara's blog</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="">
+        <img src="https://downloader.disk.yandex.ru/preview/ef94cab1b9ee018553136d821bf439d122d29d921640d9967f4408040da4870e/5b6468e3/fKqInKw3d7bLFOeFnMGnhFFOu66himU__ac9Xplfz91dhdume5fIUzE-fS2NJtyl9ZHNqQ1kw0FVSIqXd6mlMUObRrULNzPPPS2z98S0rtmr8npumZHI4midPdWhecNq?uid=0&filename=8MgB-8XfPsM.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&size=2048x2048" alt="Dinara Sultangulova" title="Dinara Sultangulova">
+      </a>
+      <h1><a href="">Dinara Sultangulova</a></h1>
+<p>Science, math and programming</p>      <nav>
+        <ul class="list">
+          <li><a href="/pages/about-me.html#about-me">About me</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-facebook" href="https://www.facebook.com/oftomorrow" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="sc-github" href="http://github.com/oftomorrow" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/oftomorrow" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <nav>
+      <a href="">Home</a>
+      <a href="tags.html">TAGS</a>
+      <a href="categories.html">CATEGORIES</a>
+    </nav>
+
+<article>
+  <header>
+    <h2><a href="/theano-function.html#theano-function">Assertion error and Theano function</a></h2>
+    <p>
+      Posted on Пт 03 Август 2018 in <a href="/category/programming-notes.html">programming notes</a>
+      &#8226; Tagged with
+      <a href="/tag/data.html">data</a>,      <a href="/tag/analisys.html">analisys</a>,      <a href="/tag/python.html">python</a>,      <a href="/tag/theano.html">theano</a>,      <a href="/tag/scikit-learn.html">scikit-learn</a>,      <a href="/tag/machine-learning.html">machine learning</a>,      <a href="/tag/threads.html">threads</a>,      <a href="/tag/queue.html">queue</a>,      <a href="/tag/semaphore.html">semaphore</a>    </p>
+  </header>
+  <div>
+      
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Theano is used in one of the projects I'm working on. The project is a web server and it accepts requests and process them using Theano function. When the server tries to process two simultaneous requests, it's failed with the error:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>File "theano/scan_module/scan_perform.pyx", line 397, in theano.scan_module.scan_perform.perform
+(/home/dinara/work_projects/ds_voxrec_api/.theano/compiledir_Linux-4.4--generic-x86_64-with-
+Ubuntu-16.04-xenial-x86_64-3.5.2-64/scan_perform/mod.cpp:4490)
+AssertionError: The compute map of output 0 should contain 1 at the end of execution, not 0.</p>
+      <a class="btn" href="/theano-function.html#theano-function">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/titanic-disaster.html#titanic-disaster">Titanic disaster analysis</a></h2>
+    <p>
+      Posted on Чт 17 Ноябрь 2016 in <a href="/category/data-analysis.html">data analysis</a>
+      &#8226; Tagged with
+      <a href="/tag/data.html">data</a>,      <a href="/tag/analisys.html">analisys</a>,      <a href="/tag/python.html">python</a>,      <a href="/tag/pandas.html">pandas</a>,      <a href="/tag/matplotlib.html">matplotlib</a>,      <a href="/tag/scikit-learn.html">scikit-learn</a>,      <a href="/tag/numpy.html">numpy</a>,      <a href="/tag/machine-learning.html">machine learning</a>,      <a href="/tag/kaggle.html">kaggle</a>    </p>
+  </header>
+  <div>
+      
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I'm newbie at the Kaggle and I'm new to machine learning. I'll try to make this exploration interesting and detailed.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Content">Content<a class="anchor-link" href="#Content">¶</a></h2><ul>
+<li><a href="#data-analysis">1. Data analysis</a><ul>
+<li><a href="#expectations">1.1. Expectations</a></li>
+<li><a href="#loading-and-examination-the-dataset">1.2. Loading and examination the dataset</a></li>
+<li><a href="#data-managing">1.3. Data managing</a></li>
+</ul>
+</li>
+<li><a href="#features-analisys">2. Features analisys</a><ul>
+<li><a href="#passenger-class-sex">2.1. Passenger Class, Sex</a></li>
+<li><a href="#age">2.2. Age</a></li>
+<li><a href="#parch-sibsp">2.3. Parch, Sibsp</a></li>
+<li><a href="#embarked">2.4. Embarked</a></li>
+</ul>
+</li>
+<li><a href="#predictions">3. Predictions</a><ul>
+<li><a href="#data-cleaning">3.1. Data cleaning</a></li>
+<li><a href="#results">3.2. Results</a></li>
+</ul>
+</li>
+<li><a href="#conclusion">4. Conclusion</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Data-analysis"><a id="data-analysis"></a>1. Data analysis<a class="anchor-link" href="#1.-Data-analysis">¶</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.-Expectations"><a id="expectations"></a>1.1. Expectations<a class="anchor-link" href="#1.1.-Expectations">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What I do expect from this analysis? I’ll create a model predicting a survival on the Titanic. And on the way to prediction I'll make illustrations for all found dependencies.<br>
+First of all, I want to understand what kind of variables do I have.</br>
+      <a class="btn" href="/titanic-disaster.html#titanic-disaster">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/linear-regression.html#linear-regression">Future stock prices prediction based on the historical data using simplified linear regression</a></h2>
+    <p>
+      Posted on Чт 06 Октябрь 2016 in <a href="/category/data-analysis.html">data analysis</a>
+      &#8226; Tagged with
+      <a href="/tag/data.html">data</a>,      <a href="/tag/analisys.html">analisys</a>,      <a href="/tag/python.html">python</a>,      <a href="/tag/pandas.html">pandas</a>,      <a href="/tag/matplotlib.html">matplotlib</a>,      <a href="/tag/scikit-learn.html">scikit-learn</a>,      <a href="/tag/numpy.html">numpy</a>,      <a href="/tag/machine-learning.html">machine learning</a>,      <a href="/tag/linear-regression.html">linear regression</a>    </p>
+  </header>
+  <div>
+      
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this post I want give a simplified explanation of what the linear regression model is and how to apply it for data predictions using python and some open python libraries (including scikit-learning).</p>
+<p>Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value).</p>
+      <a class="btn" href="/linear-regression.html#linear-regression">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/drug-use-analysis.html#drug-use-analysis">Small drug use data analysis</a></h2>
+    <p>
+      Posted on Вт 06 Сентябрь 2016 in <a href="/category/data-analysis.html">data analysis</a>
+      &#8226; Tagged with
+      <a href="/tag/matplotlib.html">matplotlib</a>,      <a href="/tag/data.html">data</a>,      <a href="/tag/analisys.html">analisys</a>,      <a href="/tag/python.html">python</a>    </p>
+  </header>
+  <div>
+      
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I was looking for health databases for my first reseach. While searching I found the National Survey on Drug Use and Health. Data were collected and prepared for release by Research Triangle Institute, Research Triangle Park, North Carolina. Since these data are available for the general public, I chose this database. I downloaded the data file and the codebook for transcription. Reading the codebook (at least the introduction) is important for better data understanding.</p>
+      <a class="btn" href="/drug-use-analysis.html#drug-use-analysis">Continue reading</a>
+  </div>
+</article>
+
+  <div class="pagination">
+  </div>
+
+    <footer>
+        <p>&copy; Dinara Sultangulova 2016</p>
+<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Dinara's blog ",
+  "url" : "",
+  "image": "https://downloader.disk.yandex.ru/preview/ef94cab1b9ee018553136d821bf439d122d29d921640d9967f4408040da4870e/5b6468e3/fKqInKw3d7bLFOeFnMGnhFFOu66himU__ac9Xplfz91dhdume5fIUzE-fS2NJtyl9ZHNqQ1kw0FVSIqXd6mlMUObRrULNzPPPS2z98S0rtmr8npumZHI4midPdWhecNq?uid=0&filename=8MgB-8XfPsM.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&size=2048x2048",
+  "description": "This blog was created to unveil my potential in Data Science and developing and to discuss topics and problems with people holding the same view."
+}
+</script>
+</body>
+</html>
