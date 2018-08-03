@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dinara's blog</title><link>/</link><description>Science, math and programming</description><lastBuildDate>Fri, 03 Aug 2018 14:31:00 +0200</lastBuildDate><item><title>Assertion error and Theano function</title><link>/theano-function.html</link><description>&lt;style type="text/css"&gt;/*!
+<rss version="2.0"><channel><title>Dinara's blog</title><link>https://oftomorrow.github.io/</link><description>Science, math and programming</description><lastBuildDate>Fri, 03 Aug 2018 14:31:00 +0200</lastBuildDate><item><title>Assertion error and Theano function</title><link>https://oftomorrow.github.io/theano-function.html</link><description>&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1175,7 +1175,7 @@ AssertionError: The compute map of output 0 should contain 1 at the end of execu
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Fri, 03 Aug 2018 14:31:00 +0200</pubDate><guid isPermaLink="false">tag:,2018-08-03:theano-function.html</guid><category>data</category><category>analisys</category><category>python</category><category>theano</category><category>scikit-learn</category><category>machine learning</category><category>threads</category><category>queue</category><category>semaphore</category></item><item><title>Titanic disaster analysis</title><link>/titanic-disaster.html</link><description>&lt;style type="text/css"&gt;/*!
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Fri, 03 Aug 2018 14:31:00 +0200</pubDate><guid isPermaLink="false">tag:oftomorrow.github.io,2018-08-03:theano-function.html</guid><category>data</category><category>analisys</category><category>python</category><category>theano</category><category>scikit-learn</category><category>machine learning</category><category>threads</category><category>queue</category><category>semaphore</category></item><item><title>Titanic disaster analysis</title><link>https://oftomorrow.github.io/titanic-disaster.html</link><description>&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -7483,7 +7483,7 @@ SVC score:					0.86195
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Thu, 17 Nov 2016 19:32:00 +0100</pubDate><guid isPermaLink="false">tag:,2016-11-17:titanic-disaster.html</guid><category>data</category><category>analisys</category><category>python</category><category>pandas</category><category>matplotlib</category><category>scikit-learn</category><category>numpy</category><category>machine learning</category><category>kaggle</category></item><item><title>Future stock prices prediction based on the historical data using simplified linear regression</title><link>/linear-regression.html</link><description>&lt;style type="text/css"&gt;/*!
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Thu, 17 Nov 2016 19:32:00 +0100</pubDate><guid isPermaLink="false">tag:oftomorrow.github.io,2016-11-17:titanic-disaster.html</guid><category>data</category><category>analisys</category><category>python</category><category>pandas</category><category>matplotlib</category><category>scikit-learn</category><category>numpy</category><category>machine learning</category><category>kaggle</category></item><item><title>Future stock prices prediction based on the historical data using simplified linear regression</title><link>https://oftomorrow.github.io/linear-regression.html</link><description>&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -11642,7 +11642,7 @@ Number of variables: 12; Residual sum of squares: 1.97; Variance score: 0.99
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Thu, 06 Oct 2016 20:34:00 +0200</pubDate><guid isPermaLink="false">tag:,2016-10-06:linear-regression.html</guid><category>data</category><category>analisys</category><category>python</category><category>pandas</category><category>matplotlib</category><category>scikit-learn</category><category>numpy</category><category>machine learning</category><category>linear regression</category></item><item><title>Small drug use data analysis</title><link>/drug-use-analysis.html</link><description>&lt;style type="text/css"&gt;/*!
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Thu, 06 Oct 2016 20:34:00 +0200</pubDate><guid isPermaLink="false">tag:oftomorrow.github.io,2016-10-06:linear-regression.html</guid><category>data</category><category>analisys</category><category>python</category><category>pandas</category><category>matplotlib</category><category>scikit-learn</category><category>numpy</category><category>machine learning</category><category>linear regression</category></item><item><title>Small drug use data analysis</title><link>https://oftomorrow.github.io/drug-use-analysis.html</link><description>&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -17130,4 +17130,4 @@ gg==
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Tue, 06 Sep 2016 17:20:00 +0200</pubDate><guid isPermaLink="false">tag:,2016-09-06:drug-use-analysis.html</guid><category>matplotlib</category><category>data</category><category>analisys</category><category>python</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Dinara S.</dc:creator><pubDate>Tue, 06 Sep 2016 17:20:00 +0200</pubDate><guid isPermaLink="false">tag:oftomorrow.github.io,2016-09-06:drug-use-analysis.html</guid><category>matplotlib</category><category>data</category><category>analisys</category><category>python</category></item></channel></rss>

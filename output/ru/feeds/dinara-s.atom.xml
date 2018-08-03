@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Блог Динары</title><link href="/ru/" rel="alternate"></link><link href="/feeds/dinara-s.atom.xml" rel="self"></link><id>/ru/</id><updated>2018-08-03T14:31:00+02:00</updated><entry><title>Assertion error and Theano function</title><link href="/ru/theano-function.html" rel="alternate"></link><published>2018-08-03T14:31:00+02:00</published><updated>2018-08-03T14:31:00+02:00</updated><author><name>Dinara S.</name></author><id>tag:,2018-08-03:ru/theano-function.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Блог Динары</title><link href="https://oftomorrow.github.io/ru/" rel="alternate"></link><link href="https://oftomorrow.github.io/feeds/dinara-s.atom.xml" rel="self"></link><id>https://oftomorrow.github.io/ru/</id><updated>2018-08-03T14:31:00+02:00</updated><entry><title>Assertion error and Theano function</title><link href="https://oftomorrow.github.io/ru/theano-function.html" rel="alternate"></link><published>2018-08-03T14:31:00+02:00</published><updated>2018-08-03T14:31:00+02:00</updated><author><name>Dinara S.</name></author><id>tag:oftomorrow.github.io,2018-08-03:ru/theano-function.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1175,7 +1175,7 @@ AssertionError: The compute map of output 0 should contain 1 at the end of execu
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</summary><category term="data"></category><category term="analisys"></category><category term="python"></category><category term="theano"></category><category term="scikit-learn"></category><category term="machine learning"></category><category term="threads"></category><category term="queue"></category><category term="semaphore"></category></entry><entry><title>Titanic disaster analysis</title><link href="/ru/titanic-disaster.html" rel="alternate"></link><published>2016-11-17T19:32:00+01:00</published><updated>2016-11-17T19:32:00+01:00</updated><author><name>Dinara S.</name></author><id>tag:,2016-11-17:ru/titanic-disaster.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+</summary><category term="data"></category><category term="analisys"></category><category term="python"></category><category term="theano"></category><category term="scikit-learn"></category><category term="machine learning"></category><category term="threads"></category><category term="queue"></category><category term="semaphore"></category></entry><entry><title>Titanic disaster analysis</title><link href="https://oftomorrow.github.io/ru/titanic-disaster.html" rel="alternate"></link><published>2016-11-17T19:32:00+01:00</published><updated>2016-11-17T19:32:00+01:00</updated><author><name>Dinara S.</name></author><id>tag:oftomorrow.github.io,2016-11-17:ru/titanic-disaster.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -7483,7 +7483,7 @@ SVC score:					0.86195
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</summary><category term="data"></category><category term="analisys"></category><category term="python"></category><category term="pandas"></category><category term="matplotlib"></category><category term="scikit-learn"></category><category term="numpy"></category><category term="machine learning"></category><category term="kaggle"></category></entry><entry><title>Future stock prices prediction based on the historical data using simplified linear regression</title><link href="/ru/linear-regression.html" rel="alternate"></link><published>2016-10-06T20:34:00+02:00</published><updated>2016-10-06T20:34:00+02:00</updated><author><name>Dinara S.</name></author><id>tag:,2016-10-06:ru/linear-regression.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+</summary><category term="data"></category><category term="analisys"></category><category term="python"></category><category term="pandas"></category><category term="matplotlib"></category><category term="scikit-learn"></category><category term="numpy"></category><category term="machine learning"></category><category term="kaggle"></category></entry><entry><title>Future stock prices prediction based on the historical data using simplified linear regression</title><link href="https://oftomorrow.github.io/ru/linear-regression.html" rel="alternate"></link><published>2016-10-06T20:34:00+02:00</published><updated>2016-10-06T20:34:00+02:00</updated><author><name>Dinara S.</name></author><id>tag:oftomorrow.github.io,2016-10-06:ru/linear-regression.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -11642,7 +11642,7 @@ Number of variables: 12; Residual sum of squares: 1.97; Variance score: 0.99
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</summary><category term="data"></category><category term="analisys"></category><category term="python"></category><category term="pandas"></category><category term="matplotlib"></category><category term="scikit-learn"></category><category term="numpy"></category><category term="machine learning"></category><category term="linear regression"></category></entry><entry><title>Small drug use data analysis</title><link href="/ru/drug-use-analysis.html" rel="alternate"></link><published>2016-09-06T17:20:00+02:00</published><updated>2016-09-06T17:20:00+02:00</updated><author><name>Dinara S.</name></author><id>tag:,2016-09-06:ru/drug-use-analysis.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+</summary><category term="data"></category><category term="analisys"></category><category term="python"></category><category term="pandas"></category><category term="matplotlib"></category><category term="scikit-learn"></category><category term="numpy"></category><category term="machine learning"></category><category term="linear regression"></category></entry><entry><title>Small drug use data analysis</title><link href="https://oftomorrow.github.io/ru/drug-use-analysis.html" rel="alternate"></link><published>2016-09-06T17:20:00+02:00</published><updated>2016-09-06T17:20:00+02:00</updated><author><name>Dinara S.</name></author><id>tag:oftomorrow.github.io,2016-09-06:ru/drug-use-analysis.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
